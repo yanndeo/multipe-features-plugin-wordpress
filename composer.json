@@ -1,0 +1,19 @@
+{
+    "name": "maranatha/newsletter-homemade",
+    "description": "simple newsletter plugin home made",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Yann Deo",
+            "email": "yan2sambou@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "./inc"
+        }
+    }
+}
