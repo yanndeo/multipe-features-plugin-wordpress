@@ -14,7 +14,7 @@ final class Init
     public static function get_services(): array
     {
         return [
-            Api\SettingsApi::class,
+           // Api\SettingsApi::class,
             Base\SettingsLinks::class,
             Pages\Admin::class,
             Base\Enqueue::class,
