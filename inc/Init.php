@@ -1,10 +1,8 @@
 <?php
-
+/**
+ * @package Homemade
+ */
 namespace Inc;
-
-use Inc\Base\Activate;
-use Inc\Base\Deactivate;
-use Inc\Base\SettingsLinks;
 
 final class Init
 {
@@ -16,6 +14,7 @@ final class Init
     public static function get_services(): array
     {
         return [
+            Api\SettingsApi::class,
             Base\SettingsLinks::class,
             Pages\Admin::class,
             Base\Enqueue::class,

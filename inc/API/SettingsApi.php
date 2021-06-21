@@ -1,8 +1,8 @@
 <?php
 /**
- * @package Newsletter_Homemade
+ * @package Homemade
  */
-namespace Api\Base;
+namespace Inc\Api;
 
 class SettingsApi
 {
@@ -15,14 +15,21 @@ class SettingsApi
         }
     }
 
+    /**
+     * @param array $pages
+     *
+     * @return $this
+     */
     public function addPages(array $pages)
     {
-     $this->admin_pages = $pages;
+        $this->admin_pages = $pages;
 
-     return $this;
+        return $this;
     }
 
-
+    /**
+     * Loop all page define as admin pages
+     */
     public function addAdminMenu()
     {
        foreach ( $this->admin_pages as $page ) {
@@ -35,7 +42,6 @@ class SettingsApi
                $page['icon_url'],
                $page['position'],
            );
-
        }
     }
 }

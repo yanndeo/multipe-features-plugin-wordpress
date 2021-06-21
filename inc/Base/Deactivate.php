@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Newsletter_Homemade
+ * @package Homemade
  */
 namespace Inc\Base;
 

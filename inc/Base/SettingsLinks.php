@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Newsletter_Homemade
+ * @package Homemade
  */
 namespace Inc\Base;
 
@@ -26,7 +26,7 @@ class SettingsLinks extends BaseController
      */
      public function settings_link($links)
     {
-        $settings_link = '<a href='. self::ADMIN_PAGE_URL . '?page=newsletter_homemade_plugin>Settings</a>' ;
+        $settings_link = '<a href='. self::ADMIN_PAGE_URL . '?page=homemade_plugin>Settings</a>' ;
         array_push($links, $settings_link);
 
         return $links;
